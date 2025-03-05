@@ -15,5 +15,8 @@ class Grille:
         return self.grille
     
     def afficher(self):
-        print(self.grille)
+        for ligne in self.grille:
+            print(" ".join(str(cellule) for cellule in ligne))
+
+
 

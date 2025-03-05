@@ -5,13 +5,16 @@ class Cellule:
         self.x = x
         self.y = y
         self.etat = etat
+    
+    def __str__(self):
+        return "1" if self.etat else "."
 
     #Permet de changer l'etat de la cellule
     def change_etat(self):
         self.etat = not self.etat
 
     #Permet de donner l'etat de la cellule
-    def etat(self):
+    def get_etat(self):
         return self.etat
     #Permet de donner la position de la cellule
     def position(self):
