@@ -28,4 +28,3 @@ class Grille:
         return self.cellules_vivantes
 
    
-
